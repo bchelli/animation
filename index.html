@@ -1,0 +1,44 @@
+<html>
+	<head>
+		<style>
+			.ball {
+				box-sizing: border-box;
+				position: absolute;
+				border: 2px solid #ccc;
+				background: #fcc;
+			}
+		</style>
+		<script type="text/javascript" src="./scripts/lib/raf.js"></script>
+		<script type="text/javascript" src="./scripts/lib/animation.js"></script>
+		<script type="text/javascript" src="./scripts/lib/easings.js"></script>
+		<script type="text/javascript" src="./scripts/index.js"></script>
+	</head>
+	<body>
+		<input type="text" id="number" value="300" />
+		<button onClick="addBouncingBalls(parseFloat(document.getElementById('number').value))">Add bouncing balls</button>
+		<button onClick="addBouncingBalls(parseFloat(document.getElementById('number').value), true)">Add bouncing balls with jQuery</button>
+
+
+
+		<!-- jQuery -->
+		<script type="text/javascript" src="./scripts/vendor/jquery-2.1.4.min.js"></script>
+		<script type="text/javascript" src="./scripts/vendor/jquery-ui-1.11.4.min.js"></script>
+
+
+
+		<!-- Add Stats.js -->
+		<script type="text/javascript">
+			(function(){
+				var script=document.createElement('script');
+				script.onload=function(){
+					var stats=new Stats();
+					stats.domElement.style.cssText='position:fixed;right:0;top:0;z-index:10000';
+					document.body.appendChild(stats.domElement);
+					requestAnimationFrame(function loop(){ stats.update(); requestAnimationFrame(loop); });
+				};
+				script.src='./scripts/vendor/stats.min.js';
+				document.head.appendChild(script);
+			})();
+		</script>
+	</body>
+</html>
