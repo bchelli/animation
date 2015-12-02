@@ -1,6 +1,8 @@
 
-
+var count = 0;
 function addBouncingBalls (number, isJquery) {
+	count += number;
+	document.getElementById('count').innerHTML = count;
 	for(var i=0; i<number; i++) {
 		addBouncingBall(isJquery);
 	}

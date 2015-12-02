@@ -3,8 +3,8 @@
  * Easing methods
  */
 var easings = {
-	linear:         function (t) { return t },
-	swing:          function (t) { return 0.5 - Math.cos( t * Math.PI ) / 2 },
+	linear:  function (t) { return t },
+	swing:   function (t) { return 0.5 - Math.cos( t * Math.PI ) / 2 },
 };
 
 var baseEaseOut = {

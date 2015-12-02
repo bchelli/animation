@@ -1,38 +1,38 @@
 
-setTimeout(function () {
-	draw('linear');
-	draw('swing');
-	draw('easeInQuad');
-	draw('easeOutQuad');
-	draw('easeInOutQuad');
-	draw('easeInCubic');
-	draw('easeOutCubic');
-	draw('easeInOutCubic');
-	draw('easeInQuart');
-	draw('easeOutQuart');
-	draw('easeInOutQuart');
-	draw('easeInQuint');
-	draw('easeOutQuint');
-	draw('easeInOutQuint');
-	draw('easeInExpo');
-	draw('easeOutExpo');
-	draw('easeInOutExpo');
-	draw('easeInCirc');
-	draw('easeOutCirc');
-	draw('easeInOutCirc');
-	draw('easeInSin');
-	draw('easeOutSin');
-	draw('easeInOutSin');
-	draw('easeInElastic');
-	draw('easeOutElastic');
-	draw('easeInOutElastic');
-	draw('easeInBack');
-	draw('easeOutBack');
-	draw('easeInOutBack');
-	draw('easeInBounce');
-	draw('easeOutBounce');
-	draw('easeInOutBounce');
-}, 1000)
+[
+	'linear',
+	'swing',
+	'easeInQuad',
+	'easeOutQuad',
+	'easeInOutQuad',
+	'easeInCubic',
+	'easeOutCubic',
+	'easeInOutCubic',
+	'easeInQuart',
+	'easeOutQuart',
+	'easeInOutQuart',
+	'easeInQuint',
+	'easeOutQuint',
+	'easeInOutQuint',
+	'easeInExpo',
+	'easeOutExpo',
+	'easeInOutExpo',
+	'easeInCirc',
+	'easeOutCirc',
+	'easeInOutCirc',
+	'easeInSin',
+	'easeOutSin',
+	'easeInOutSin',
+	'easeInElastic',
+	'easeOutElastic',
+	'easeInOutElastic',
+	'easeInBack',
+	'easeOutBack',
+	'easeInOutBack',
+	'easeInBounce',
+	'easeOutBounce',
+	'easeInOutBounce',
+].map(draw);
 
 function draw(name) {
 	var h2 = document.createElement('h2');
